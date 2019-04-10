@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zamówienie z Kooperatywy Wawelskiej">
+<link rel="stylesheet" href="CSS/tabela.css">
+<link rel="stylesheet" href="CSS/glowny.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../script.js"></script>
+<script src="https://code.jquery.com/jquery-latest.pack.js"></script>
+</head>
+<body>
+<div id="cart">
+Wartość zamówienia: ...
+</div>
+<div class="main_table">
+<table>
+  <thead><h1>Zamówienia na <span id="month">$miesiąc</span></h1>   </thead>
+<tr id="table_header">
+  <th scope="col"  rowspan="2">Lp.</th>
+  <th scope="col" rowspan="2">Produkt</th>
+  <th scope="col" rowspan="2">Opis</th>
+  <th scope="col" rowspan="2">Cena</th>
+  <th scope="col" rowspan="2">Jednostka</th>
+  <th scope="col" rowspan="2">Maks. zamówienie</th>
+  <th scope="colgroup" colspan="2">Użytkownik:<br>
+   <div class="dropdown">
+     <button class="dropbtn">Tu dropdown menu.
+          <!--<i class="fa fa-caret-down"></i> -->
+     </button>
+        <div class="dropdown-content">
+          <a href="#">kooperant 1</a>
+          <a href="#">kooperant 2</a>
+          <a href="#">kooperant 3</a>
+       </div>
+  </div>
+  </th>
+</tr>
+<tr id="table_header">
+  <th scope="col">Ilość</th>
+  <th scope="col">Kwota</th>
+</tr>
+<tr class="products_row">
+ <td class="lp">1.</td>
+ <td class="product_name">Sample_vegetable1</td>
+ <td class="product_description">Pyyyyyśne</td>
+ <td class="price">5</td>
+ <td class="unit">szt.</td>
+ <td class="max">100</td>
+ <td class="ilosc">2</td>
+ <td class="kwota">10</td>
+</tr>
+
+
+</table>
+</div>
+
+
+
+
+</body>

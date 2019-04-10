@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  background-color: grey;
+
+}
+#cart{
+  display: float;
+  float: right;
+  background-color: white;
+  border-color: darkgreen;
+  height: 5%;
+  width: auto;
+
+}
