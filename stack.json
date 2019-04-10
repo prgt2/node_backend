@@ -1,0 +1,7 @@
+{
+"runtime_server_side": "node.js",
+"framework": "express.js",
+"template_engine": "pug",
+"database": "MySQL",
+"npm_dependencies": {"express", "mysql", "nodemon", "joi"}
+}
