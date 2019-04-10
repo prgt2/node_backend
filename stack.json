@@ -4,9 +4,9 @@
 "generator": "expess-generator",
 "template_engine": "pug",
 "database": "MySQL",
-"npm_dependencies": "{"express", "mysql", "nodemon", "joi"}",
-"testing": "runkit"
-"middleware": "{"express.static",
-"models":
-"authentication":
+"npm_dependencies": "{express, mysql, nodemon, joi}",
+"testing": "runkit",
+"middleware": "{express.static",
+"models": "",
+"authentication": ""
 }
