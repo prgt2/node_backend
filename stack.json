@@ -1,7 +1,12 @@
 {
 "runtime_server_side": "node.js",
 "framework": "express.js",
+"generator": "expess-generator",
 "template_engine": "pug",
 "database": "MySQL",
-"npm_dependencies": {"express", "mysql", "nodemon", "joi"}
+"npm_dependencies": "{"express", "mysql", "nodemon", "joi"}",
+"testing": "runkit"
+"middleware": "{"express.static",
+"models":
+"authentication":
 }
