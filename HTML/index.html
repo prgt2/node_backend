@@ -9,13 +9,13 @@
 <script src="../script.js"></script>
 <script src="https://code.jquery.com/jquery-latest.pack.js"></script>
 </head>
-<body>
+<body onload='skrypt()'>
 <div id="cart">
 Wartość zamówienia: ...
 </div>
 <div class="main_table">
 <table>
-  <thead><h1>Zamówienia na <span id="month">$miesiąc</span></h1>   </thead>
+  <thead><h1>Zamówienia na <span id="month">$miesiąc</span></h1></thead>
 <tr id="table_header">
   <th scope="col"  rowspan="2">Lp.</th>
   <th scope="col" rowspan="2">Produkt</th>
@@ -29,7 +29,7 @@ Wartość zamówienia: ...
           <!--<i class="fa fa-caret-down"></i> -->
      </button>
         <div class="dropdown-content">
-          <a href="#">kooperant 1</a>
+          <button id="kooperant1"><a href="#">kooperant 1</a></button>
           <a href="#">kooperant 2</a>
           <a href="#">kooperant 3</a>
        </div>
@@ -47,7 +47,7 @@ Wartość zamówienia: ...
  <td class="price">5</td>
  <td class="unit">szt.</td>
  <td class="max">100</td>
- <td class="ilosc">2</td>
+ <td class="ilosc"><input type="text"></td>
  <td class="kwota">10</td>
 </tr>
 

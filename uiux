@@ -1,0 +1,14 @@
+-html
+-index.html (choose if youre a client or admin)
+    -client.html (choose which client you are)
+        *clients_site.html (see what products are available, see clients ordered products, submit orders, modify orders)
+    -admin.html (choose clients, suppliers, products)
+        *admin_clients.html (cients and their orders)
+        *admin_suppliers_and_products.html (suppliers list, products list)
+        *admin_put (client, supplier, product)
+-css
+    *glowny.css
+    *tabela.css
+*app.js (entrypoint)
+*routes.js (routes)
+*script.js (frontend)

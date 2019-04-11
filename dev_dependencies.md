@@ -1,5 +1,5 @@
 /lokalnie/
-sudo npm install mysql, express, joi, nodemon
+sudo npm install mysql, express, joi, nodemon, body-parser
 run with nodemon /nazwa pliku/
 /globalnie/
 apt-get install mysql-server
