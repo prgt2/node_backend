@@ -1,19 +1,35 @@
+#!/usr/bin/env node
 const express = require('express') //zasysa moduł express.js
 const app = express() //przechowuje moduł w const, zeby nie trzeba było dużo pisać
 const path = require('path')
 const port = process.env.PORT || 3000 //dokładnie, słucha zmiennej środowiskowej, jesli brak słucha na 3000
-const kooperanter = [
-    {id: 1, name: 'kooperant1', order: []},
-    {id: 2, name: 'kooperant2', order: []},
-    {id: 3, name: 'kooperant3', order: []}
-]
-const produkta = [
-    {id: 1, nazwa: 'marchew', jednostka: 'kg', cena: 5, waluta: 'zł'},
-    {id: 2, nazwa: 'ziemniak', jednostka: 'kg', cena: 4, waluta: 'zł'},
-    {id: 3, nazwa: 'placek', jednostka: 'szt', cena: 8, waluta: 'zł'}
-
-]
-app.get('/', (req, res) => {
+let kooperanter = []
+let produkta = []
+function NeuesKooperant(name, order = [], id = kooperanter.length + 1) {
+    this.id = id;
+    this.name = name;
+    this.order = order;
+}
+function NeuesFrukta(nazwa, cena, id = produkta.length + 1, jednostka = 'szt', waluta = 'zł') {
+    this.nazwa = nazwa;
+    this.cena = cena;
+    this.id = id;
+    this.jednostka = jednostka;
+    this.waluta = waluta;
+}
+function createKooperant(name, order, id) {
+    let obiektKoop = new NeuesKooperant(name, order, id)
+    kooperanter.push(obiektKoop)
+}
+createKooperant('Włodek')
+createKooperant('Zdzichu')
+function createFrukt(nazwa, cena, id, jednostka, waluta) {
+    let obiektFrukt = new NeuesFrukta(nazwa, cena, id, jednostka, waluta)
+    produkta.push(obiektFrukt)
+}
+createFrukt('Marchew',5)
+createFrukt('Ziemniaki',3, 'kg')
+app.get('/', (req, res) => { //zastapic uniwersalna funkcja z domyslnymi parametrami
     res.sendFile(path.join(__dirname, "index.html"))
     console.log(__dirname)
 })
